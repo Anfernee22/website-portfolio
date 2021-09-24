@@ -1,5 +1,6 @@
 import '../Styles/Projects.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const [projectsSummary] = useState([
@@ -52,21 +53,21 @@ return (
             <div className="todo-list-img images">
                 <img src="todo-img.jpeg" alt="" />
                 <div className="todo-button-container view-btn-container">
-                    <button className="view-code-btn">View Code</button>
+                    <Link to="/todo" className="view-code-btn">View Code</Link>
                 </div>
             </div>
 
             <div className="shop-cart-img images">
                 <img src="Shop-cart-img.jpeg" alt="" />
                 <div className="cart-button-container view-btn-container">
-                    <button className="view-code-btn">View Code</button>
+                    <Link to="shopping-cart" className="view-code-btn">View Code</Link>
                 </div>
             </div>
 
             <div className="piggy-bank-img images">
                 <img src="piggy-bank-img.jpeg" alt="" />
                 <div className="bank-button-container view-btn-container">
-                    <button className="view-code-btn">View Code</button>
+                    <Link className="view-code-btn">View Code</Link>
                 </div>
             </div>
 
@@ -76,14 +77,3 @@ return (
     )
 }
 export default Projects;
-
-// <div className="todo-list-summar
-
-// <div className="piggy-bank-summary">
-// <h3>Piggy Bank</h3>
-// <ul>
-//     <li>Create a new account</li>
-//     <li>Receive a $10 dollar reward after joining us</li>
-//     <li>Get easy access to online banking</li>
-// </ul>
-// </div>

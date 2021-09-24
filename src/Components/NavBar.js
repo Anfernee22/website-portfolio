@@ -29,8 +29,8 @@ const NavBar = () => {
                         <Link className="nav-link" to="/contact-me"><li>Contact Me</li></Link>
                         
                         <div className="account-links">
-                            <Link to='/'  className="git-icon"><i className="fab fa-github"></i><span>GitHub</span></Link>
-                            <Link to="/" className="linkedIn-icon"><i className="fab fa-linkedin"></i><span>Linked In</span></Link>
+                            <Link to='/github'  className="git-icon"><i className="fab fa-github"></i><span>GitHub</span></Link>
+                            <Link to="/linked-in" className="linkedIn-icon"><i className="fab fa-linkedin"></i><span>Linked In</span></Link>
                         </div>
                     </ul>
                 </nav>

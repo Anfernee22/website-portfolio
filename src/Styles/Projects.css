@@ -89,6 +89,7 @@
 	width: 15.27%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	display: none;
 }
 .view-code-btn:hover {
@@ -98,14 +99,15 @@
 	color: rgb(167, 167, 5);
 	transition: all 2s ease-in-out;
 }
-.todo-button-container button,
-.cart-button-container button,
-.bank-button-container button {
+.view-code-btn{
 	width: 60%;
 	padding: 0.4em;
 	font-size: 1em;
 	font-weight: bold;
 	color: #00264d;
+	text-decoration: none;
+	text-align:center;
+	background-color: rgb(167, 167, 5);
 }
 
 @media (max-width: 768px) {
