@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import '../Styles/NavBar.css'
 import {useState} from 'react'
-
 const NavBar = () => {
     const [clicked, setClicked] = useState({clicked: false})
     const iconClicked = () => setClicked({clicked: !clicked.clicked})
-
     return(
         <div className="navbar-wrapper">
             <div className="navbar-container">
@@ -15,24 +13,21 @@ const NavBar = () => {
                 <h3>Luis Arias</h3>
                 <h4>Front End Developer</h4>
             </div>
-            
-            <div className="burger-icon" onClick={iconClicked}>
-                <i className={clicked.clicked ? 'fas fa-times' : 'fas fa-hamburger'}></i>
+            <div className="burger-icon" >
+                <i className={clicked.clicked ? 'fas fa-times' : 'fas fa-hamburger'} onClick={iconClicked}></i>
             </div>
-                
             <div className={clicked.clicked ? 'nav-link-wrapper active' : 'nav-link-wrapper'}>
-                <nav className="nav-links-container">
-                    <ul  onClick={() => setClicked(!clicked)}>
-                        <Link className="nav-link" to="/"><li >About</li></Link>
-                        <Link className="nav-link" to="/my-skills"><li>My Skills</li></Link>
-                        <Link className="nav-link" to='/projects'><li>Projects</li></Link>
-                        <Link className="nav-link" to="/contact-me"><li>Contact Me</li></Link>
-                        
-                        <div className="account-links">
-                            <Link to='/github'  className="git-icon"><i className="fab fa-github"></i><span>GitHub</span></Link>
-                            <Link to="/linked-in" className="linkedIn-icon"><i className="fab fa-linkedin"></i><span>Linked In</span></Link>
-                        </div>
-                    </ul>
+                <nav className="nav-links-container" >
+                    <div className="links">
+                        <Link to="/" className="nav-link" onClick={() => setClicked(!clicked)}>About</Link>
+                        <Link to="/my-skills" className="nav-link" onClick={() => setClicked(!clicked)}>My Skills</Link>
+                        <Link to="/projects" className="nav-link" onClick={() => setClicked(!clicked)}>Projects</Link>
+                        <Link to="/contact-me" className="nav-link" onClick={() => setClicked(!clicked)}>Contact me</Link>
+                    </div>
+                    <div className="account-links">
+                        <Link to='/github'  className="git-icon" onClick={() => setClicked(!clicked)}><i className="fab fa-github"></i><span>GitHub</span></Link>
+                        <Link to="/linked-in" className="linkedIn-icon" onClick={() => setClicked(!clicked)}><i className="fab fa-linkedin"></i><span>Linked In</span></Link>
+                    </div>
                 </nav>
                 <div className="copy-right">
                     <p>&copy; Luis Dev.</p>

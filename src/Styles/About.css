@@ -21,7 +21,6 @@
 }
 .about-container h1{
     color: rgb(167, 167, 5);
-    
 }
 .about-container span{
     color: white;
@@ -65,7 +64,6 @@ button .contact-me{
     text-align: center;
     font-weight: bold;
 }
-
 @media (max-width: 768px) {
     .about-wrapper{
         width: 100%;
@@ -81,7 +79,6 @@ button .contact-me{
         background-color: #00264d;
         width: 55%;
         height: 30vh;
-       
     }
     .left-pattern p, .right-pattern p{
         transform: rotate(0deg);
@@ -91,7 +88,6 @@ button .contact-me{
     }
     .left-pattern p:nth-child(2), .right-pattern p:nth-child(2){
         width: 80%;
-        
     }
     .about-container{
         height: 40vh;
@@ -125,5 +121,4 @@ button .contact-me{
     button .contact-me{
         font-size: 1em;
     }
-
 }

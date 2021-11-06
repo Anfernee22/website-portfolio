@@ -1,4 +1,4 @@
-import './/Styles/NavBar.css';
+import './Styles/App.css'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import NavBar from './Components/NavBar';
 import About from './Components/About';
@@ -9,6 +9,7 @@ import Github from './Components/Github';
 import LinkedIn from './Components/LinkedIn';
 import Todo from './Components/Todo';
 import ShoppingCart from './Components/ShoppingCart'
+import InfoCard from './Components/InfoCard';
 function App() {
   return (
     <Router>
@@ -23,7 +24,7 @@ function App() {
           <Route path="/linked-in" component={LinkedIn}></Route>
           <Route path="/todo" component={Todo}></Route>
           <Route path="/shopping-cart" component={ShoppingCart}></Route>
-          <Route pah="/shopping-cart"></Route>
+          <Route pah="/info-card" component={InfoCard}></Route>
           </Switch>
         </div>
     </Router>

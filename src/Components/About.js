@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import '../Styles/About.css'
-
 const Home = () => {
     return(
         <div className="about-wrapper">
@@ -19,8 +18,7 @@ const Home = () => {
             <div className="right-pattern">
                 <p>Think twice code once.</p>
                 <p>First solve the problem</p>
-                <p>Then, write the code.</p>
-                   
+                <p>Then, write the code.</p> 
             </div>
         </div>
     )

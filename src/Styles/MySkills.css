@@ -17,7 +17,7 @@
 	height: 45vh;
 	background-color: #011c36;
 }
-.skills-header {
+.skills-header{
 	border: 1px solid rgb(167, 167, 5);
 	width: 25%;
 	display: flex;
@@ -28,12 +28,12 @@
 	background-color: rgb(167, 167, 5);
 }
 .skills-header h1 {
-	font-size: 2em;
 	text-align: center;
 	color: rgb(167, 167, 5);
 	background-color: #011c36;
 	padding: 0.3em;
-	border-radius: 10px;
+	border-radius: 5px;
+	width: 70%;
 }
 .skills-summary {
 	border-right: 1px solid rgb(167, 167, 5);
@@ -66,6 +66,7 @@
 }
 .my-skills li {
 	background: linear-gradient(90deg, #000, white, rgb(167, 167, 5));
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: rgba(255, 255, 255, 0);
 	background-size: 90%;
@@ -73,7 +74,6 @@
 	font-size: 2em;
 	animation: animate 3s linear infinite;
 }
-
 .other-skills {
 	width: 80%;
 	height: 40vh;
@@ -91,9 +91,11 @@
 .other-skills-header h2 {
 	border: 1px solid rgb(167, 167, 5);
 	color: rgb(167, 167, 5);
-	padding: 0.5em 0.3em;
+	padding: 0.5em 0;
 	background-color: #011c36;
-	border-radius: 10px;
+	border-radius: 5px;
+	width: 90%;
+	text-align: center;
 }
 .other-skills ul {
 	width: 100%;
@@ -107,13 +109,13 @@
 }
 .other-skills li {
 	background: linear-gradient(90deg, #000, white, rgb(167, 167, 5));
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: rgba(255, 255, 255, 0);
 	background-size: 80%;
 	font-size: 2em;
-	animation: animate 3s linear infinite;
+	animation: animate 10s linear infinite;
 }
-
 @keyframes animate {
 	0% {
 		background-position: -500%;
@@ -122,12 +124,9 @@
 		background-position: 500%;
 	}
 }
-
 @media (max-width: 768px) {
 	.skills-wrapper {
-		flex-wrap: nowrap;
-		gap: 1em;
-		flex-direction: column;
+		gap: 1.2em;
 		height: 100%;
 		width: 100%;
 		padding-block: 2em;
@@ -138,37 +137,27 @@
 		height: 100%;
 		padding-bottom: 2em;
 	}
-	.skills-header {
+	.skills-header, .other-skills-header{
 		width: 100%;
 		height: 7.5vh;
+		font-size: 1.3em;
 	}
-	.skills-header h1 {
-		font-size: 1.5em;
-		padding: 0.2em 1em;
+	.skills-header h1{
+		width: 30%;
 	}
 	.skills-summary {
 		padding: 1em;
-		border-right: none;
-		flex-direction: column;
+		box-shadow: 1px 1px 10px 3px rgb(167, 167, 5);
+		line-height: 3vh;
 		width: 70%;
-		height: 35vh;
+		height: 45vh;
 	}
 	.skills-summary p {
-		font-size: 1.2em;
-		color: rgb(182, 180, 180);
+		font-size: 1.5em;
 	}
 	.my-skills {
 		width: 70%;
 		box-shadow: 1px 1px 10px 3px rgb(167, 167, 5);
-	}
-	.my-skills ul {
-		width: 100%;
-		height: 35vh;
-		gap: 1em;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 	}
 	.other-skills {
 		width: 90%;
@@ -178,19 +167,23 @@
 	.other-skills-header {
 		height: 7vh;
 		width: 100%;
-		padding-inline: 0;
 		background-color: rgb(167, 167, 5);
+		font-size: 1.3em;
+		padding: .5em;
 	}
 	.other-skills-header h2 {
-		font-size: 1.3em;
-		padding: 0.35em 1em;
+		border-radius: 5px;
+		width: 35%;
 	}
 	.other-skills ul {
-		height: 42.7vh;
+		height: 40vh;
+		gap: 1em;
 	}
 }
-
-@media (max-width: 414px) {
+@media (max-width: 375px) {
+	.skills-container{
+		background-color: #00264d;
+	}
 	.skills-header,
 	.other-skills-header {
 		width: 100%;
@@ -203,11 +196,16 @@
 		color: #011c36;
 		font-weight: bold;
 	}
+	.skills-summary{
+		height: 35vh;
+		width: 100%;
+	}
 	.skills-summary p {
-		font-size: 0.89em;
+		font-size: 0.9em;
 	}
 	.my-skills {
 		height: 35vh;
+		width: 100%;
 	}
 	.my-skills li {
 		letter-spacing: 0.5em;
@@ -217,6 +215,6 @@
 		height: 35vh;
 	}
 	.other-skills li {
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}
 }
