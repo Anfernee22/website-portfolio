@@ -1,5 +1,5 @@
 .summary-wrapper {
-	height: 100vh;
+	height: 100%;
 	width: 85%;
 	display: flex;
 	flex-direction: column;
@@ -37,7 +37,6 @@
 	text-align: center;
 	transition: 0.8s;
 	transform-style: preserve-3d;
-	
 }
 .pop-up{
 	position: absolute;
@@ -49,9 +48,7 @@
 	padding: .5em;
 	animation: popup .5s ease-in-out forwards;
 	display: none;
-	
 }
-
 @keyframes popup{
 	0%{opacity: 0}
 	70%{transform: translateY(700px);}
@@ -71,7 +68,6 @@
 .main-box:hover .box{
 	transform: rotateY(180deg);
 }
-
 .projects-img,
 .projects-summary{
 	position: absolute;
@@ -79,7 +75,6 @@
 	height: 100%;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	
 }
 .projects-summary span{
 	display: none;
@@ -93,7 +88,6 @@
 	color: #00264d;
 	transform: rotateY(180deg);
 	border: 1px solid;
-
 }
 .projects-summary ul {
 	display: flex;
@@ -111,22 +105,21 @@
 	border: 1px solid rgb(167, 167, 5);
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	height: 30%;
 	background-color: #00264d;
 }
-.btn-container button {
-	width: 50%;
-	height: 40%;
-	border: inset;
-}
 .code-btn {
+	border: 1px solid rgb(167, 167, 5);
+	padding: 1em;
+	border-radius: 10px;
 	text-decoration: none;
-	color: #00264d;
+	color: rgb(167, 167, 5);
+	text-decoration: none;
 }
 
 @media (max-width: 768px) {
 	.summary-wrapper {
-		height: 100%;
 		width: 100%;
 		padding-block: 1em;
 	}
@@ -181,35 +174,26 @@
 		box-shadow: 1px 1px 5px 1px #011c36;
 	}
 	.code-btn {
-		color: rgb(167, 167, 5);
+		color: #011c36;
 		font-size: 1.2em;
+		font-weight: bold;
 	}
 }
-
-@media (max-width: 375px) {
-	.summary-wrapper {
-		border: none;
-		width: 100%;
-	}
-	.summary-container {
-		box-shadow: none;
-		height: 95vh;
-	}
+@media screen and (max-width: 543px) {
 	.projects-header {
 		background-color: #011c36;
 		color: rgb(167, 167, 5);
 		height: 5vh;
 		font-size: .8em;
-		border-radius: initial;
 		box-shadow: 1px 1px 5px 1px rgb(167, 167, 5);
 	}
 	.projects-container {
-		flex-direction: column;
+		height: 100%;
 		gap: .5em;
-		padding-block: 1em;
 	}
 	.main-box {
-		width: 70%;
+		height: 40vh;
+		width: 80%;
 	}
 	.main-box:hover .pop-up{
 		display: none;
@@ -224,23 +208,14 @@
 		color: #00264d;
 	}
 	.projects-summary span{
-		display: flex;
 		box-shadow: 1px 1px 5px 1px #011c36;
-		padding: .5em 0;
-		justify-content: center;
-		width: 100%;
 	}
 	.btn-container {
-		height: 15%;
-		background-color: initial;
-	}
-	.btn-container button {
 		background-color: #011c36;
-		height: 100%;
-		border: initial;
-		border-radius: 10px;
+		border: none;
 	}
 	.code-btn {
-		color: rgb(167, 167, 5);
+		border: none;
+		font-size: 1em;
 	}
 }

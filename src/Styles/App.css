@@ -5,9 +5,21 @@
 }
 .app-wrapper {
 	display: flex;
+	height: 100vh;
 }
 @media (max-width: 768px){
     .app-wrapper {
 		flex-direction: column;
+		height: 100%;
+	}
+}
+@media screen and (max-width: 543px){
+	.app-wrapper{
+		height: 100%;
+	}
+}
+@media screen and (max-width: 320px){
+	.app-wrapper{
+		height: 100%;
 	}
 }

@@ -46,7 +46,7 @@ const Projects = () => {
                                     <li>{projectsSummary[0].listThree}</li>
                                 </ul>
                                 <div className="btn-container">
-                                    <button><Link to="/todo"className="code-btn">View Code</Link></button>
+                                    <Link to="/todo"className="code-btn">View Code</Link>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ const Projects = () => {
                                     <li>{projectsSummary[1].listThree}</li>
                                 </ul>
                                 <div className="btn-container">
-                                    <button><Link to="/shopping-cart" className="code-btn">View Code</Link></button>
+                                    <Link to="/shopping-cart" className="code-btn">View Code</Link>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +84,7 @@ const Projects = () => {
                                     <li>{projectsSummary[2].listThree}</li>
                                 </ul>
                                 <div className="btn-container">
-                                    <button><Link to="/info-card" className="code-btn">View Code</Link></button>
+                                    <Link to="/info-card" className="code-btn">View Code</Link>
                                 </div>
                             </div>
                         </div>

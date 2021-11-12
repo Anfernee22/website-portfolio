@@ -1,5 +1,5 @@
-import '../Styles/Contact.css'
-const Contact = () => {    
+import '../Styles/Contact.css';
+const Contact = () => {  
     return (
         <div className="contact-wrapper">
             <div className="contact-container">
