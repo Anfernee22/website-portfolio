@@ -118,7 +118,7 @@
 	text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.summary-wrapper {
 		width: 100%;
 		padding-block: 1em;
@@ -155,15 +155,12 @@
 		width: 100%;
 	}
 	.projects-summary ul {
-		flex-direction: column;
 		background-color: #011c36;
 		color: rgb(167, 167, 5);
 		gap: .8em;
 		height: 80%;
 	}
 	.btn-container {
-		display: flex;
-		justify-content: center;
 		height: 20%;
 		background-color: rgba(167, 167, 5, 0.466);
 	}
@@ -195,9 +192,6 @@
 		height: 40vh;
 		width: 80%;
 	}
-	.main-box:hover .pop-up{
-		display: none;
-	}
 	.projects-summary{
 		padding-block: .5em;
 	}
@@ -215,6 +209,7 @@
 		border: none;
 	}
 	.code-btn {
+		color: rgb(167, 167, 5);
 		border: none;
 		font-size: 1em;
 	}

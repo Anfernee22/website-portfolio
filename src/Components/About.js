@@ -21,11 +21,10 @@ const Home = () => {
                         <div className="additional-info">
                             <p>I am here to help <span>designers</span>, <span>businesses</span> bring their <span>ideas and goals</span> to life. I am a good problem solver so don't wait and click on the button below to contact me!</p>
                         </div>
-                        <div className="contact-btn">
+                        <nav className="contact-btn">
                             <Link to='/contact-me' className="btn">Contact me</Link>
-                        </div>
+                        </nav>
                     </div>
-                    
                 </div>
             </div>
         </div>

@@ -45,9 +45,9 @@ const Projects = () => {
                                     <li>{projectsSummary[0].listTwo}</li>
                                     <li>{projectsSummary[0].listThree}</li>
                                 </ul>
-                                <div className="btn-container">
+                                <nav className="btn-container">
                                     <Link to="/todo"className="code-btn">View Code</Link>
-                                </div>
+                                </nav>
                             </div>
                         </div>
                     </div>
@@ -64,9 +64,9 @@ const Projects = () => {
                                     <li>{projectsSummary[1].listTwo}</li>
                                     <li>{projectsSummary[1].listThree}</li>
                                 </ul>
-                                <div className="btn-container">
+                                <nav className="btn-container">
                                     <Link to="/shopping-cart" className="code-btn">View Code</Link>
-                                </div>
+                                </nav>
                             </div>
                         </div>
                     </div>

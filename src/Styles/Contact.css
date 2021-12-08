@@ -90,17 +90,14 @@ textarea:focus {
 		align-items: center;
 		height: 50%;
 	}
-	.contact-collaborate p {
-		color: rgb(167, 167, 5);
-		font-size: 1.2em;
-	}
 	form{
 		height: 80%;
 	}
 	input[type='text'],
 	input[type='email'],
 	textarea {
-		padding: 1em 1em;
+		padding: 1em;
+		color: rgb(167, 167, 5);
 	}
 	::placeholder {
 		font-size: 1em;
@@ -113,7 +110,6 @@ textarea:focus {
 	}
 	.send-btn {
 		padding-block: 0.4em;
-		font-size: 1em;
 		height: 100%;
 		width: 30%;
 	}
@@ -123,7 +119,6 @@ textarea:focus {
 		padding: 1em;
 	}
 	.contact-container {
-		height: 100%;
 		padding: 0 .5em;
 		width: 100%;
 	}
